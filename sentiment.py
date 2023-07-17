@@ -34,14 +34,22 @@ class VoteClassifier(ClassifierI):
         return conf
 
 
+<<<<<<< HEAD
 documents_f = open("pickled_algos/documents.pickle", "rb")
+=======
+documents_f = open("new_pickled_algos/documents.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 documents = pickle.load(documents_f)
 documents_f.close()
 
 
 
 
+<<<<<<< HEAD
 word_features5k_f = open("pickled_algos/word_features5k.pickle", "rb")
+=======
+word_features5k_f = open("new_pickled_algos/word_features5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 word_features = pickle.load(word_features5k_f)
 word_features5k_f.close()
 
@@ -56,7 +64,11 @@ def find_features(document):
 
 # featuresets=[(find_features(rev),category) for (rev,)]
 
+<<<<<<< HEAD
 # featuresets_f = open("pickled_algos/featuresets.pickle", "rb")
+=======
+# featuresets_f = open("new_pickled_algos/featuresets.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 # featuresets = pickle.load(featuresets_f)
 # featuresets_f.close()
 # featuresets=find_features(documents_f)
@@ -69,33 +81,57 @@ def find_features(document):
 
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/originalnaivebayes5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/originalnaivebayes5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 classifier = pickle.load(open_file)
 open_file.close()
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/MNB_classifier5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/MNB_classifier5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 MNB_classifier = pickle.load(open_file)
 open_file.close()
 
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/BernoulliNB_classifier5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/BernoulliNB_classifier5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 BernoulliNB_classifier = pickle.load(open_file)
 open_file.close()
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/LogisticRegression_classifier5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/LogisticRegression_classifier5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 LogisticRegression_classifier = pickle.load(open_file)
 open_file.close()
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/LinearSVC_classifier5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/LinearSVC_classifier5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 LinearSVC_classifier = pickle.load(open_file)
 open_file.close()
 
 
+<<<<<<< HEAD
 open_file = open("pickled_algos/SGDC_classifier5k.pickle", "rb")
+=======
+open_file = open("new_pickled_algos/SGDC_classifier5k.pickle", "rb")
+>>>>>>> 3b1de88 (Reran the pickled algos)
 SGDC_classifier = pickle.load(open_file)
 open_file.close()
 
@@ -115,3 +151,8 @@ voted_classifier = VoteClassifier(
 def sentimentAnalysis(text):
     feats = find_features(text)
     return voted_classifier.classify(feats),voted_classifier.confidence(feats)
+<<<<<<< HEAD
+=======
+
+# print(sentimentAnalysis("Wow this video is good amazing spectacular joyous and stright up bussin no cap."))
+>>>>>>> 3b1de88 (Reran the pickled algos)

@@ -63,4 +63,10 @@ def getComment(url):
 
     return comment
 
+<<<<<<< HEAD
+=======
+# a = getComment("https://www.youtube.com/watch?v=32ga8m475tE")
+# print(a)
+
+>>>>>>> 3b1de88 (Reran the pickled algos)
 
